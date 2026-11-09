@@ -3,157 +3,167 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Examen blanc — Taxi parisien</title>
+<title>Examen blanc — Taxi parisien — Questions variées</title>
 <style>
-body{font-family:Arial,sans-serif;max-width:820px;margin:auto;padding:16px;background:#f4f6f8;color:#122}
-h1{color:#0b3d62}h2{margin-top:28px;color:#0b3d62}.q{background:#fff;padding:14px;border-radius:10px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}label{display:block;margin:6px 0}button{background:#0b3d62;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:16px;cursor:pointer}#result{font-size:20px;font-weight:bold;margin-top:16px;padding:12px;border-radius:8px;background:#dff3e1}.ok{color:#0a7d33;font-weight:bold}.bad{color:#b3261e;font-weight:bold}.exp{margin-top:8px;padding:10px;background:#eef6ff;border-left:4px solid #0b3d62;border-radius:6px}input[type=text]{width:100%;padding:8px;margin-top:6px;border:1px solid #bbb;border-radius:6px}
+body{font-family:Arial,sans-serif;max-width:840px;margin:auto;padding:16px;background:#f4f6f8;color:#122}
+h1{color:#0b3d62}h2{margin-top:28px;color:#0b3d62}.q{background:#fff;padding:14px;border-radius:10px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}label{display:block;margin:6px 0}button{background:#0b3d62;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:16px;cursor:pointer;margin-right:8px}#result{font-size:20px;font-weight:bold;margin-top:16px;padding:12px;border-radius:8px;background:#dff3e1}.ok{color:#0a7d33;font-weight:bold}.bad{color:#b3261e;font-weight:bold}.exp{margin-top:8px;padding:10px;background:#eef6ff;border-left:4px solid #0b3d62;border-radius:6px}input[type=text],select{width:100%;padding:8px;margin-top:6px;border:1px solid #bbb;border-radius:6px;box-sizing:border-box}.tag{display:inline-block;background:#0b3d62;color:#fff;padding:2px 8px;border-radius:12px;font-size:12px;margin-bottom:6px}.diag{background:#fff;border-left:5px solid #b3261e;padding:12px;border-radius:8px;margin-top:12px}.diag.good{border-left-color:#0a7d33}.diag.warn{border-left-color:#d97706}
 </style>
 </head>
 <body>
 <h1>Examen blanc — Taxi parisien</h1>
-<p><strong>Thèmes :</strong> réglementation spécifique de l’activité de taxi et connaissance du territoire Paris / Île-de-France.<br><strong>Barème :</strong> 22 points — 20 QCM (1 point chacun) + 2 questions à réponse courte (1 point chacune).</p>
+<p><strong>Types de questions :</strong> QCM, vrai/faux, association, réponse courte, calcul et mise en situation.<br><strong>Barème :</strong> 24 points — 1 point par question.</p>
 
-<div class="q"><strong>1.</strong> Que signifie un lumineux rouge sur un taxi parisien ?<br>
+<div class="q"><span class="tag">QCM</span><strong>1.</strong> Que signifie un lumineux rouge sur un taxi parisien ?<br>
 <label><input type="radio" name="q1" value="a"> Le taxi est libre</label>
 <label><input type="radio" name="q1" value="b"> Le taxi est occupé ou indisponible</label>
 <label><input type="radio" name="q1" value="c"> Le taxi est en fin de service</label></div>
 
-<div class="q"><strong>2.</strong> Que signifie un lumineux vert sur un taxi parisien ?<br>
-<label><input type="radio" name="q2" value="a"> Le taxi est libre</label>
-<label><input type="radio" name="q2" value="b"> Le taxi est occupé</label>
-<label><input type="radio" name="q2" value="c"> Le taximètre est hors service</label></div>
+<div class="q"><span class="tag">QCM</span><strong>2.</strong> Le terminal de paiement par carte bancaire est :<br>
+<label><input type="radio" name="q2" value="a"> Facultatif</label>
+<label><input type="radio" name="q2" value="b"> Obligatoire</label>
+<label><input type="radio" name="q2" value="c"> Réservé aux courses de plus de 20 km</label></div>
 
-<div class="q"><strong>3.</strong> À Paris, le tarif C correspond principalement à :<br>
-<label><input type="radio" name="q3" value="a"> Un forfait applicable aux courses vers ou depuis les aéroports parisiens</label>
-<label><input type="radio" name="q3" value="b"> Le tarif de nuit en province</label>
-<label><input type="radio" name="q3" value="c"> Le supplément bagages</label></div>
+<div class="q"><span class="tag">QCM</span><strong>3.</strong> À Paris, l’ADS de taxi est principalement délivrée par :<br>
+<label><input type="radio" name="q3" value="a"> La préfecture de police</label>
+<label><input type="radio" name="q3" value="b"> La SNCF</label>
+<label><input type="radio" name="q3" value="c"> La chambre de commerce</label></div>
 
-<div class="q"><strong>4.</strong> La prise en charge est :<br>
-<label><input type="radio" name="q4" value="a"> Un pourboire obligatoire</label>
-<label><input type="radio" name="q4" value="b"> Un montant forfaitaire ajouté au début de la course</label>
-<label><input type="radio" name="q4" value="c"> Le prix du kilomètre</label></div>
+<div class="q"><span class="tag">QCM</span><strong>4.</strong> Le taximètre doit être :<br>
+<label><input type="radio" name="q4" value="a"> Masqué pendant la course</label>
+<label><input type="radio" name="q4" value="b"> Visible et en état de fonctionnement</label>
+<label><input type="radio" name="q4" value="c"> Utilisé seulement la nuit</label></div>
 
-<div class="q"><strong>5.</strong> Que signifie l’abréviation ADS ?<br>
-<label><input type="radio" name="q5" value="a"> Autorisation de stationnement délivrée</label>
-<label><input type="radio" name="q5" value="b"> Assurance dommages spéciaux</label>
-<label><input type="radio" name="q5" value="c"> Arrêt de service</label></div>
+<div class="q"><span class="tag">QCM</span><strong>5.</strong> L’aéroport Paris-Orly se trouve :<br>
+<label><input type="radio" name="q5" value="a"> Au nord de Paris</label>
+<label><input type="radio" name="q5" value="b"> Au sud de Paris</label>
+<label><input type="radio" name="q5" value="c"> Dans Paris intra-muros</label></div>
 
-<div class="q"><strong>6.</strong> À Paris, l’autorité qui délivre l’ADS de taxi est principalement :<br>
-<label><input type="radio" name="q6" value="a"> La mairie d’arrondissement</label>
-<label><input type="radio" name="q6" value="b"> La préfecture de police</label>
-<label><input type="radio" name="q6" value="c"> La SNCF</label></div>
+<div class="q"><span class="tag">QCM</span><strong>6.</strong> La gare de Lyon se situe dans le :<br>
+<label><input type="radio" name="q6" value="a"> 10e arrondissement</label>
+<label><input type="radio" name="q6" value="b"> 12e arrondissement</label>
+<label><input type="radio" name="q6" value="c"> 16e arrondissement</label></div>
 
-<div class="q"><strong>7.</strong> Un taxi parisien doit être équipé :<br>
-<label><input type="radio" name="q7" value="a"> D’un taximètre homologué et visible</label>
-<label><input type="radio" name="q7" value="b"> Uniquement d’une application de navigation</label>
-<label><input type="radio" name="q7" value="c"> D’un compteur de vitesse spécifique</label></div>
+<div class="q"><span class="tag">QCM</span><strong>7.</strong> Un chien guide ou un animal d’assistance doit être :<br>
+<label><input type="radio" name="q7" value="a"> Refusé</label>
+<label><input type="radio" name="q7" value="b"> Accepté à bord</label>
+<label><input type="radio" name="q7" value="c"> Accepté seulement avec supplément</label></div>
 
-<div class="q"><strong>8.</strong> Le terminal de paiement par carte bancaire dans un taxi est :<br>
-<label><input type="radio" name="q8" value="a"> Facultatif</label>
-<label><input type="radio" name="q8" value="b"> Obligatoire</label>
-<label><input type="radio" name="q8" value="c"> Réservé aux courses longue distance</label></div>
+<div class="q"><span class="tag">QCM</span><strong>8.</strong> Le chauffeur peut refuser une course notamment lorsque :<br>
+<label><input type="radio" name="q8" value="a"> Le client veut aller à Montmartre</label>
+<label><input type="radio" name="q8" value="b"> Sa sécurité ou celle des passagers est compromise</label>
+<label><input type="radio" name="q8" value="c"> La course est trop courte</label></div>
 
-<div class="q"><strong>9.</strong> Un chien guide d’aveugle ou animal d’assistance doit être :<br>
-<label><input type="radio" name="q9" value="a"> Refusé systématiquement</label>
-<label><input type="radio" name="q9" value="b"> Accepté à bord</label>
-<label><input type="radio" name="q9" value="c"> Accepté seulement moyennant supplément</label></div>
+<div class="q"><span class="tag">Vrai / Faux</span><strong>9.</strong> Un lumineux vert signifie que le taxi est libre.<br>
+<label><input type="radio" name="q9" value="a"> Vrai</label>
+<label><input type="radio" name="q9" value="b"> Faux</label></div>
 
-<div class="q"><strong>10.</strong> Le chauffeur peut refuser une course notamment lorsque :<br>
-<label><input type="radio" name="q10" value="a"> Le client souhaite simplement aller à Montmartre</label>
-<label><input type="radio" name="q10" value="b"> Sa sécurité ou celle des passagers est compromise</label>
-<label><input type="radio" name="q10" value="c"> La course est trop courte</label></div>
+<div class="q"><span class="tag">Vrai / Faux</span><strong>10.</strong> La prise en charge est un montant forfaitaire ajouté au début de la course.<br>
+<label><input type="radio" name="q10" value="a"> Vrai</label>
+<label><input type="radio" name="q10" value="b"> Faux</label></div>
 
-<div class="q"><strong>11.</strong> Le taximètre doit être :<br>
-<label><input type="radio" name="q11" value="a"> Masqué pendant la course</label>
-<label><input type="radio" name="q11" value="b"> Visible et en état de fonctionnement</label>
-<label><input type="radio" name="q11" value="c"> Utilisé seulement pour les courses de nuit</label></div>
+<div class="q"><span class="tag">Vrai / Faux</span><strong>11.</strong> Un taxi peut circuler sur une voie de bus comme un véhicule de transport en commun.<br>
+<label><input type="radio" name="q11" value="a"> Vrai</label>
+<label><input type="radio" name="q11" value="b"> Faux</label></div>
 
-<div class="q"><strong>12.</strong> À Paris, le tarif de nuit s’applique notamment :<br>
-<label><input type="radio" name="q12" value="a"> Entre 17 h et 10 h, ainsi que les dimanches et jours fériés</label>
-<label><input type="radio" name="q12" value="b"> Uniquement après minuit</label>
-<label><input type="radio" name="q12" value="c"> Uniquement le samedi matin</label></div>
+<div class="q"><span class="tag">Vrai / Faux</span><strong>12.</strong> Le tarif C à Paris concerne notamment les courses vers ou depuis les aéroports parisiens.<br>
+<label><input type="radio" name="q12" value="a"> Vrai</label>
+<label><input type="radio" name="q12" value="b"> Faux</label></div>
 
-<div class="q"><strong>13.</strong> La gare de Lyon se situe dans le :<br>
-<label><input type="radio" name="q13" value="a"> 10e arrondissement</label>
-<label><input type="radio" name="q13" value="b"> 12e arrondissement</label>
-<label><input type="radio" name="q13" value="c"> 15e arrondissement</label></div>
+<div class="q"><span class="tag">Vrai / Faux</span><strong>13.</strong> Le boulevard périphérique permet de faire le tour de Paris et de relier les portes de la capitale.<br>
+<label><input type="radio" name="q13" value="a"> Vrai</label>
+<label><input type="radio" name="q13" value="b"> Faux</label></div>
 
-<div class="q"><strong>14.</strong> La gare du Nord se situe dans le :<br>
-<label><input type="radio" name="q14" value="a"> 10e arrondissement</label>
-<label><input type="radio" name="q14" value="b"> 13e arrondissement</label>
-<label><input type="radio" name="q14" value="c"> 16e arrondissement</label></div>
+<div class="q"><span class="tag">Association</span><strong>14.</strong> Associez la gare à son arrondissement :<br>
+<label>Gare du Nord : <select id="q14"><option value="">—</option><option value="a">10e arrondissement</option><option value="b">12e arrondissement</option><option value="c">14e arrondissement</option></select></label>
+<label>Gare de Lyon : <select id="q15"><option value="">—</option><option value="a">10e arrondissement</option><option value="b">12e arrondissement</option><option value="c">14e arrondissement</option></select></label>
+<label>Gare Montparnasse : <select id="q16"><option value="">—</option><option value="a">10e arrondissement</option><option value="b">12e arrondissement</option><option value="c">14e arrondissement</option></select></label></div>
 
-<div class="q"><strong>15.</strong> La gare Montparnasse est principalement située :<br>
-<label><input type="radio" name="q15" value="a"> Dans le 14e arrondissement, à la limite du 15e</label>
-<label><input type="radio" name="q15" value="b"> Dans le 1er arrondissement</label>
-<label><input type="radio" name="q15" value="c"> Dans le 18e arrondissement</label></div>
+<div class="q"><span class="tag">Association</span><strong>15.</strong> Associez le lieu à son arrondissement :<br>
+<label>Pitié-Salpêtrière : <select id="q17"><option value="">—</option><option value="a">13e arrondissement</option><option value="b">15e arrondissement</option><option value="c">18e arrondissement</option></select></label>
+<label>Hôpital Européen Georges-Pompidou : <select id="q18"><option value="">—</option><option value="a">13e arrondissement</option><option value="b">15e arrondissement</option><option value="c">18e arrondissement</option></select></label>
+<label>Sacré-Cœur : <select id="q19"><option value="">—</option><option value="a">13e arrondissement</option><option value="b">15e arrondissement</option><option value="c">18e arrondissement</option></select></label></div>
 
-<div class="q"><strong>16.</strong> L’aéroport Paris-Charles-de-Gaulle (Roissy) se trouve :<br>
-<label><input type="radio" name="q16" value="a"> Au nord-est de Paris</label>
-<label><input type="radio" name="q16" value="b"> Au sud de Paris</label>
-<label><input type="radio" name="q16" value="c"> À l’ouest de Paris</label></div>
+<div class="q"><span class="tag">Association</span><strong>16.</strong> Associez chaque élément à sa fonction :<br>
+<label>Lumineux vert : <select id="q20"><option value="">—</option><option value="a">Taxi libre</option><option value="b">Taxi occupé</option><option value="c">Autorisation de taxi</option></select></label>
+<label>Lumineux rouge : <select id="q21"><option value="">—</option><option value="a">Taxi libre</option><option value="b">Taxi occupé</option><option value="c">Autorisation de taxi</option></select></label>
+<label>ADS : <select id="q22"><option value="">—</option><option value="a">Taxi libre</option><option value="b">Taxi occupé</option><option value="c">Autorisation de taxi</option></select></label></div>
 
-<div class="q"><strong>17.</strong> L’aéroport Paris-Orly se trouve :<br>
-<label><input type="radio" name="q17" value="a"> Au nord de Paris</label>
-<label><input type="radio" name="q17" value="b"> Au sud de Paris</label>
-<label><input type="radio" name="q17" value="c"> Dans Paris intra-muros</label></div>
+<div class="q"><span class="tag">Réponse courte</span><strong>17.</strong> Quelle autorité délivre principalement l’autorisation de stationnement de taxi à Paris ?<br><input type="text" id="q23" placeholder="Votre réponse"></div>
 
-<div class="q"><strong>18.</strong> L’hôpital Pitié-Salpêtrière se situe dans le :<br>
-<label><input type="radio" name="q18" value="a"> 13e arrondissement</label>
-<label><input type="radio" name="q18" value="b"> 8e arrondissement</label>
-<label><input type="radio" name="q18" value="c"> 17e arrondissement</label></div>
+<div class="q"><span class="tag">Réponse courte</span><strong>18.</strong> Quelle grande gare parisienne se trouve dans le 10e arrondissement ?<br><input type="text" id="q24" placeholder="Votre réponse"></div>
 
-<div class="q"><strong>19.</strong> L’hôpital Européen Georges-Pompidou se situe principalement dans le :<br>
-<label><input type="radio" name="q19" value="a"> 15e arrondissement</label>
-<label><input type="radio" name="q19" value="b"> 4e arrondissement</label>
-<label><input type="radio" name="q19" value="c"> 19e arrondissement</label></div>
+<div class="q"><span class="tag">Réponse courte</span><strong>19.</strong> Comment appelle-t-on l’autorisation nécessaire pour exercer comme taxi à Paris ?<br><input type="text" id="q25" placeholder="Votre réponse"></div>
 
-<div class="q"><strong>20.</strong> Le boulevard périphérique de Paris sert notamment à :<br>
-<label><input type="radio" name="q20" value="a"> Faire le tour de Paris et relier les portes de la capitale</label>
-<label><input type="radio" name="q20" value="b"> Traverser uniquement le 1er arrondissement</label>
-<label><input type="radio" name="q20" value="c"> Accéder uniquement aux aéroports</label></div>
+<div class="q"><span class="tag">Calcul</span><strong>20.</strong> La prise en charge est de 3 € et la course indique 12 € au taximètre. Quel est le montant total à encaisser ?<br><input type="text" id="q26" placeholder="Votre réponse en euros"></div>
 
-<div class="q"><strong>21. Question à réponse courte :</strong> Quelle autorité délivre principalement l’autorisation de stationnement de taxi à Paris ?<br><input type="text" id="q21" placeholder="Votre réponse"></div>
+<div class="q"><span class="tag">Calcul</span><strong>21.</strong> Un client paie 20 € et doit recevoir 5 € de monnaie. Quelle somme devez-vous lui rendre ?<br><input type="text" id="q27" placeholder="Votre réponse en euros"></div>
 
-<div class="q"><strong>22. Question à réponse courte :</strong> Quelle grande gare parisienne se trouve dans le 10e arrondissement ?<br><input type="text" id="q22" placeholder="Votre réponse"></div>
+<div class="q"><span class="tag">Mise en situation</span><strong>22.</strong> Un client agressif refuse de boucler sa ceinture et menace le chauffeur. Quelle est la meilleure attitude ?<br>
+<label><input type="radio" name="q28" value="a"> Continuer la course malgré le danger</label>
+<label><input type="radio" name="q28" value="b"> Mettre fin à la course si nécessaire et privilégier la sécurité</label>
+<label><input type="radio" name="q28" value="c"> Accepter la course pour éviter un conflit</label></div>
+
+<div class="q"><span class="tag">Mise en situation</span><strong>23.</strong> Un client souhaite aller à Roissy-Charles-de-Gaulle. Dans quelle direction se trouve principalement cet aéroport ?<br>
+<label><input type="radio" name="q29" value="a"> Au nord-est de Paris</label>
+<label><input type="radio" name="q29" value="b"> Au sud de Paris</label>
+<label><input type="radio" name="q29" value="c"> À l’ouest de Paris</label></div>
+
+<div class="q"><span class="tag">Logique / territoire</span><strong>24.</strong> Quel lieu n’est pas une gare parisienne ?<br>
+<label><input type="radio" name="q30" value="a"> Gare du Nord</label>
+<label><input type="radio" name="q30" value="b"> Gare de l’Est</label>
+<label><input type="radio" name="q30" value="c"> Place de la République</label></div>
 
 <button onclick="corriger()">Corriger mon examen</button>
 <button onclick="location.reload()">Recommencer</button>
 <div id="result"></div>
+<div id="diagnostic"></div>
 <div id="details"></div>
 
 <script>
-const rep={q1:'b',q2:'a',q3:'a',q4:'b',q5:'a',q6:'b',q7:'a',q8:'b',q9:'b',q10:'b',q11:'b',q12:'a',q13:'b',q14:'a',q15:'a',q16:'a',q17:'b',q18:'a',q19:'a',q20:'a'};
+const rep={q1:'b',q2:'b',q3:'a',q4:'b',q5:'b',q6:'b',q7:'b',q8:'b',q9:'a',q10:'a',q11:'b',q12:'a',q13:'a',q14:'a',q15:'b',q16:'c',q17:'a',q18:'b',q19:'c',q20:'a',q21:'b',q22:'c',q28:'b',q29:'a',q30:'c'};
+const themes={reglementation:['q1','q2','q3','q4','q7','q8','q9','q10','q11','q12','q20','q21','q22','q23','q25','q28'],territoire:['q5','q6','q13','q14','q15','q16','q17','q18','q19','q24','q29','q30'],calcul:['q26','q27']};
 const exp={
-q1:'Le lumineux rouge indique que le taxi est occupé ou indisponible : il ne doit pas prendre de nouveau client à la voie.',
-q2:'Le lumineux vert indique que le taxi est libre et peut prendre un client.',
-q3:'À Paris, le tarif C est un forfait appliqué aux courses entre Paris et les aéroports parisiens, selon la zone de départ ou d’arrivée.',
-q4:'La prise en charge est un montant forfaitaire ajouté au début de la course, avant la facturation au kilomètre ou à l’heure.',
-q5:'ADS signifie « Autorisation de Stationnement » : c’est l’autorisation nécessaire pour exercer comme taxi.',
-q6:'À Paris, l’ADS de taxi est délivrée par la préfecture de police, qui réglemente l’activité taxi parisienne.',
-q7:'Le taxi doit posséder un taximètre homologué, visible et fonctionnel afin de calculer le prix de la course selon la réglementation.',
-q8:'Le terminal de paiement par carte bancaire est obligatoire dans le taxi afin de permettre au client de régler sa course par carte.',
-q9:'Les chiens guides et animaux d’assistance doivent être acceptés à bord : ils accompagnent une personne en situation de handicap.',
-q10:'Le chauffeur peut refuser une course pour des motifs légitimes, notamment lorsque sa sécurité, celle des passagers ou la sécurité du véhicule est compromise.',
-q11:'Le taximètre doit rester visible et fonctionnel : il permet au client de suivre la course et garantit une tarification réglementaire.',
-q12:'À Paris, le tarif de nuit s’applique notamment entre 17 h et 10 h, ainsi que les dimanches et jours fériés, selon la tarification préfectorale.',
-q13:'La gare de Lyon se trouve dans le 12e arrondissement de Paris, près de la Bastille et du quai de la Rapée.',
-q14:'La gare du Nord se trouve dans le 10e arrondissement, près de la gare de l’Est.',
-q15:'La gare Montparnasse est située principalement dans le 14e arrondissement, à la limite du 15e arrondissement.',
-q16:'Roissy-Charles-de-Gaulle est situé au nord-est de Paris, dans le Val-d’Oise.',
-q17:'Orly est situé au sud de Paris, principalement en Essonne.',
-q18:'La Pitié-Salpêtrière se trouve dans le 13e arrondissement, près de la place d’Italie.',
-q19:'L’hôpital Européen Georges-Pompidou se situe dans le 15e arrondissement, près du quai de Grenelle.',
-q20:'Le boulevard périphérique entoure Paris et relie les différentes portes de la capitale.',
-q21:'Bonne réponse : la Préfecture de police. À Paris, c’est elle qui délivre et réglemente principalement l’ADS de taxi.',
-q22:'Bonne réponse : la gare du Nord. Elle est située dans le 10e arrondissement de Paris.'
+q1:'Le lumineux rouge indique que le taxi est occupé ou indisponible.',
+q2:'Le terminal de paiement par carte est obligatoire afin de permettre le règlement par carte.',
+q3:'À Paris, la préfecture de police délivre et réglemente principalement l’ADS de taxi.',
+q4:'Le taximètre doit être visible et fonctionnel pour calculer la course selon la tarification en vigueur.',
+q5:'Orly se situe au sud de Paris, principalement en Essonne.',
+q6:'La gare de Lyon est située dans le 12e arrondissement.',
+q7:'Les animaux d’assistance doivent être acceptés à bord.',
+q8:'La sécurité du chauffeur, des passagers et du véhicule justifie un refus de course.',
+q9:'Le lumineux vert signifie que le taxi est libre.',
+q10:'La prise en charge est bien un forfait ajouté au début de la course.',
+q11:'Un taxi n’est pas assimilé à un véhicule de transport en commun pour circuler sur les voies de bus.',
+q12:'Le tarif C correspond à un forfait aéroport.',
+q13:'Le périphérique entoure Paris et relie ses portes.',
+q14:'La gare du Nord est dans le 10e arrondissement.',
+q15:'La gare de Lyon est dans le 12e arrondissement.',
+q16:'La gare Montparnasse est principalement dans le 14e arrondissement.',
+q17:'La Pitié-Salpêtrière est dans le 13e arrondissement.',
+q18:'L’hôpital Européen Georges-Pompidou est dans le 15e arrondissement.',
+q19:'Le Sacré-Cœur est à Montmartre, dans le 18e arrondissement.',
+q20:'Le vert signifie taxi libre.',
+q21:'Le rouge signifie taxi occupé ou indisponible.',
+q22:'ADS signifie Autorisation de Stationnement.',
+q23:'Bonne réponse : la Préfecture de police.',
+q24:'Bonne réponse : la gare du Nord.',
+q25:'Bonne réponse : ADS, Autorisation de Stationnement.',
+q26:'Bonne réponse : 15 € (3 € de prise en charge + 12 € de course).',
+q27:'Bonne réponse : 5 € (20 € reçus - 15 € dus).',
+q28:'En cas de menace ou d’agression, la sécurité prime : le chauffeur peut mettre fin à la course et appeler les secours ou les forces de l’ordre si nécessaire.',
+q29:'Roissy-Charles-de-Gaulle est situé au nord-est de Paris.',
+q30:'La place de la République n’est pas une gare ; les gares du Nord et de l’Est sont de grandes gares parisiennes.'
 };
-function corriger(){let s=0;for(let i=1;i<=20;i++){const e=document.querySelector('input[name=q'+i+']:checked');if(e&&e.value===rep['q'+i])s++;}
-const r21=document.getElementById('q21').value.toLowerCase();if(r21.includes('préfecture')||r21.includes('prefecture'))s++;
-const r22=document.getElementById('q22').value.toLowerCase();if(r22.includes('nord'))s++;
-const res=document.getElementById('result');res.textContent='Score : '+s+' / 22';res.style.background=s>=15?'#dff3e1':s>=11?'#fff3cd':'#f8d7da';
-let d='<h2>Correction et explications</h2>';for(let i=1;i<=20;i++){const e=document.querySelector('input[name=q'+i+']:checked');const ok=e&&e.value===rep['q'+i];d+='<div class="q"><strong>Question '+i+' :</strong> <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span><div class="exp"><strong>Bonne réponse :</strong> '+rep['q'+i].toUpperCase()+'<br><strong>Pourquoi :</strong> '+exp['q'+i]+'</div></div>';}
-['q21','q22'].forEach(k=>{const v=document.getElementById(k).value.trim();const ok=(k==='q21'?(r21.includes('préfecture')||r21.includes('prefecture')):r22.includes('nord'));d+='<div class="q"><strong>'+(k==='q21'?'Question 21':'Question 22')+' :</strong> <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span><div class="exp">'+exp[k]+'</div></div>';});
+function val(id){const e=document.getElementById(id);return e?e.value:'';}
+function radioVal(name){const e=document.querySelector('input[name='+name+']:checked');return e?e.value:'';}
+function isOk(k){if(k==='q23'){const v=val('q23').toLowerCase();return v.includes('préfecture')||v.includes('prefecture');}if(k==='q24'){return val('q24').toLowerCase().includes('nord');}if(k==='q25'){const v=val('q25').toLowerCase();return v.includes('ads')||v.includes('autorisation');}if(k==='q26'){return parseFloat(val('q26').replace(',','.'))===15;}if(k==='q27'){return parseFloat(val('q27').replace(',','.'))===5;}return radioVal(k)===rep[k];}
+function corriger(){let s=0;const all=Object.keys(rep).concat(['q23','q24','q25','q26','q27']);all.forEach(k=>{if(isOk(k))s++;});
+const res=document.getElementById('result');res.textContent='Score : '+s+' / 24';res.style.background=s>=17?'#dff3e1':s>=12?'#fff3cd':'#f8d7da';
+let diag='<h2>Bilan personnalisé</h2>';const conseils={reglementation:'Révise les lumineux, l’ADS, le taximètre, les tarifs, la prise en charge, le paiement par carte et les règles de refus de course.',territoire:'Révise les arrondissements, les grandes gares, les aéroports, les hôpitaux, les monuments et le périphérique.',calcul:'Entraîne-toi aux additions, soustractions et pourcentages simples : prise en charge, monnaie à rendre et total de course.'};
+Object.keys(themes).forEach(t=>{const qs=themes[t];const bonnes=qs.filter(isOk).length;const pct=Math.round(bonnes/qs.length*100);let cls='diag good';let message='Très bien, ce thème semble maîtrisé. Continue à le réviser régulièrement.';if(pct<60){cls='diag';message='Priorité absolue : '+conseils[t];}else if(pct<85){cls='diag warn';message='À consolider : '+conseils[t];}
+const erreurs=qs.filter(k=>!isOk(k));diag+='<div class="'+cls+'"><strong>'+t.charAt(0).toUpperCase()+t.slice(1)+' :</strong> '+bonnes+'/'+qs.length+' ('+pct+'%)<br>'+message;if(erreurs.length){diag+='<br><strong>Questions à refaire :</strong> '+erreurs.map(k=>k.replace('q','')).join(', ')+'.';}diag+='</div>';});
+document.getElementById('diagnostic').innerHTML=diag;
+let d='<h2>Correction et explications</h2>';all.forEach(k=>{const ok=isOk(k);d+='<div class="q"><strong>Question '+k.replace('q','')+'] :</strong> <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span><div class="exp"><strong>Bonne réponse :</strong> '+(rep[k]?rep[k].toUpperCase():'')+'<br><strong>Pourquoi :</strong> '+exp[k]+'</div></div>';});
 document.getElementById('details').innerHTML=d;}
 </script>
 </body>
