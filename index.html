@@ -6,7 +6,7 @@
 <title>Examen blanc — Taxi parisien</title>
 <style>
 body{font-family:Arial,sans-serif;max-width:820px;margin:auto;padding:16px;background:#f4f6f8;color:#122}
-h1{color:#0b3d62}h2{margin-top:28px;color:#0b3d62}.q{background:#fff;padding:14px;border-radius:10px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}label{display:block;margin:6px 0}button{background:#0b3d62;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:16px;cursor:pointer}#result{font-size:20px;font-weight:bold;margin-top:16px;padding:12px;border-radius:8px;background:#dff3e1}.ok{color:#0a7d33;font-weight:bold}.bad{color:#b3261e;font-weight:bold}input[type=text]{width:100%;padding:8px;margin-top:6px;border:1px solid #bbb;border-radius:6px}
+h1{color:#0b3d62}h2{margin-top:28px;color:#0b3d62}.q{background:#fff;padding:14px;border-radius:10px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}label{display:block;margin:6px 0}button{background:#0b3d62;color:#fff;border:0;padding:12px 18px;border-radius:8px;font-size:16px;cursor:pointer}#result{font-size:20px;font-weight:bold;margin-top:16px;padding:12px;border-radius:8px;background:#dff3e1}.ok{color:#0a7d33;font-weight:bold}.bad{color:#b3261e;font-weight:bold}.exp{margin-top:8px;padding:10px;background:#eef6ff;border-left:4px solid #0b3d62;border-radius:6px}input[type=text]{width:100%;padding:8px;margin-top:6px;border:1px solid #bbb;border-radius:6px}
 </style>
 </head>
 <body>
@@ -124,11 +124,37 @@ h1{color:#0b3d62}h2{margin-top:28px;color:#0b3d62}.q{background:#fff;padding:14p
 
 <script>
 const rep={q1:'b',q2:'a',q3:'a',q4:'b',q5:'a',q6:'b',q7:'a',q8:'b',q9:'b',q10:'b',q11:'b',q12:'a',q13:'b',q14:'a',q15:'a',q16:'a',q17:'b',q18:'a',q19:'a',q20:'a'};
+const exp={
+q1:'Le lumineux rouge indique que le taxi est occupé ou indisponible : il ne doit pas prendre de nouveau client à la voie.',
+q2:'Le lumineux vert indique que le taxi est libre et peut prendre un client.',
+q3:'À Paris, le tarif C est un forfait appliqué aux courses entre Paris et les aéroports parisiens, selon la zone de départ ou d’arrivée.',
+q4:'La prise en charge est un montant forfaitaire ajouté au début de la course, avant la facturation au kilomètre ou à l’heure.',
+q5:'ADS signifie « Autorisation de Stationnement » : c’est l’autorisation nécessaire pour exercer comme taxi.',
+q6:'À Paris, l’ADS de taxi est délivrée par la préfecture de police, qui réglemente l’activité taxi parisienne.',
+q7:'Le taxi doit posséder un taximètre homologué, visible et fonctionnel afin de calculer le prix de la course selon la réglementation.',
+q8:'Le terminal de paiement par carte bancaire est obligatoire dans le taxi afin de permettre au client de régler sa course par carte.',
+q9:'Les chiens guides et animaux d’assistance doivent être acceptés à bord : ils accompagnent une personne en situation de handicap.',
+q10:'Le chauffeur peut refuser une course pour des motifs légitimes, notamment lorsque sa sécurité, celle des passagers ou la sécurité du véhicule est compromise.',
+q11:'Le taximètre doit rester visible et fonctionnel : il permet au client de suivre la course et garantit une tarification réglementaire.',
+q12:'À Paris, le tarif de nuit s’applique notamment entre 17 h et 10 h, ainsi que les dimanches et jours fériés, selon la tarification préfectorale.',
+q13:'La gare de Lyon se trouve dans le 12e arrondissement de Paris, près de la Bastille et du quai de la Rapée.',
+q14:'La gare du Nord se trouve dans le 10e arrondissement, près de la gare de l’Est.',
+q15:'La gare Montparnasse est située principalement dans le 14e arrondissement, à la limite du 15e arrondissement.',
+q16:'Roissy-Charles-de-Gaulle est situé au nord-est de Paris, dans le Val-d’Oise.',
+q17:'Orly est situé au sud de Paris, principalement en Essonne.',
+q18:'La Pitié-Salpêtrière se trouve dans le 13e arrondissement, près de la place d’Italie.',
+q19:'L’hôpital Européen Georges-Pompidou se situe dans le 15e arrondissement, près du quai de Grenelle.',
+q20:'Le boulevard périphérique entoure Paris et relie les différentes portes de la capitale.',
+q21:'Bonne réponse : la Préfecture de police. À Paris, c’est elle qui délivre et réglemente principalement l’ADS de taxi.',
+q22:'Bonne réponse : la gare du Nord. Elle est située dans le 10e arrondissement de Paris.'
+};
 function corriger(){let s=0;for(let i=1;i<=20;i++){const e=document.querySelector('input[name=q'+i+']:checked');if(e&&e.value===rep['q'+i])s++;}
 const r21=document.getElementById('q21').value.toLowerCase();if(r21.includes('préfecture')||r21.includes('prefecture'))s++;
 const r22=document.getElementById('q22').value.toLowerCase();if(r22.includes('nord'))s++;
 const res=document.getElementById('result');res.textContent='Score : '+s+' / 22';res.style.background=s>=15?'#dff3e1':s>=11?'#fff3cd':'#f8d7da';
-let d='<h2>Correction</h2><ul>';for(let i=1;i<=20;i++){const e=document.querySelector('input[name=q'+i+']:checked');const ok=e&&e.value===rep['q'+i];d+='<li>Question '+i+' : <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span></li>';}d+='</ul>';document.getElementById('details').innerHTML=d;}
+let d='<h2>Correction et explications</h2>';for(let i=1;i<=20;i++){const e=document.querySelector('input[name=q'+i+']:checked');const ok=e&&e.value===rep['q'+i];d+='<div class="q"><strong>Question '+i+' :</strong> <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span><div class="exp"><strong>Bonne réponse :</strong> '+rep['q'+i].toUpperCase()+'<br><strong>Pourquoi :</strong> '+exp['q'+i]+'</div></div>';}
+['q21','q22'].forEach(k=>{const v=document.getElementById(k).value.trim();const ok=(k==='q21'?(r21.includes('préfecture')||r21.includes('prefecture')):r22.includes('nord'));d+='<div class="q"><strong>'+(k==='q21'?'Question 21':'Question 22')+' :</strong> <span class="'+(ok?'ok':'bad')+'">'+(ok?'Juste':'Faux ou non répondue')+'</span><div class="exp">'+exp[k]+'</div></div>';});
+document.getElementById('details').innerHTML=d;}
 </script>
 </body>
 </html>
